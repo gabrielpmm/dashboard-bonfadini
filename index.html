@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="img/logo-bonfadini.ico">
+    <title>Dashboard Gustavo Bonfadini</title>
+</head>
+<body class="geral">
+    <div class="div-global">
+        <div class="container1">
+        <div class="dashboard-flex-parent">
+            <div class="dashboard-box">
+                <div class="qtd-users"><b>20</b></div>
+                    <div class="user-atend">Usuários em <br>atendimento</div> 
+            </div>
+            <div class="dashboard-box">
+                <div class="qtd-users"><b>7</b></div>
+                    <div class="user-atend">Atendimentos finalizados no dia</div> 
+            </div>
+            <div class="dashboard-box">
+                <div class="qtd-users"><b>95</b></div>
+                    <div class="user-atend">Pontuação NPS</div> 
+            </div>
+            <div class="dashboard-box">
+                <div id="valor-rd"><b>R$ 2.000,00</b></div>
+                    <div class="user-atend">Receita do dia</div> 
+            </div>
+        </div>
+        <div class="graphics">
+            Usuários esperando atendimento
+            <div id="dados-user">
+                <div id="nome-pac">Gabriel Monteiro</div>
+                <div id="telefonepac">81987279986</div>
+                <div id="status-criticidade">URG </div>
+                <div><button id="check-button" type="button" onclick="remove()"><i class="fa-solid fa-circle-check" style="color: #ffffff;"></i></button></div>
+            </div>
+            <div id="dados-user">
+                <div id="nome-pac">Rayanne França</div>
+                <div id="telefonepac">81983437263</div>
+                <div id="status-criticidade">URG </div>
+                <div><button id="check-button" type="button" onclick="add()"><i class="fa-solid fa-circle-check" style="color: #ffffff;"></i></button></div>
+            </div>
+        </div>
+        <div class="graphics">
+            Atendimentos por dia  
+            <canvas id="chart-atend-dia"></canvas>
+        </div>
+        <div class="graphics">
+            Receita por dia
+            <canvas id="graphic-receita"></canvas>
+        </div>
+        <div class="graphics">
+            <canvas id="canc-enc-sr"></canvas>
+        </div>
+    </div>
+    <div class="leads">
+        Origem das leads
+        <div class="card-leads">
+            <i class="fa-brands fa-youtube" style="color: #0f4b8c; margin-right: 0.6rem ;"></i>
+             14</div>
+             <div class="card-leads">
+                <i class="fa-brands fa-facebook" style="color: #0f4b8c; margin-right: 0.6rem "></i>
+                 3</div>
+                 <div class="card-leads">
+                    <i class="fa-brands fa-instagram" style="color: #0f4b8c; margin-right: 0.6rem "></i>
+                     6</div>
+                     <div class="card-leads">
+                        <i class="fa-solid fa-globe" style="color: #0f4b8c; margin-right: 0.6rem "></i></i>
+                         5</div>
+                         <div class="card-leads">
+                            <i class="fa-brands fa-linkedin" style="color: #0f4b8c;  margin-right: 0.6rem "></i></i>
+                             7</div>
+    </div>
+    
+</div>
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap.min.js"> </script>    
+    <script src="index.js"></script>
+    <script src="fontawesome-free-6.4.2-web/js/all.min.js"> </script>
+</body>
+</html>
